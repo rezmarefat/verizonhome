@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [verizonhomepage5]">
+  <listeners>
+    <listener class-name="com.verizonpractice.verizonhomepage.App"/>
+  </listeners>
+  <test thread-count="5" name="Rgression5(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="https://www.sprint.com/"/>
+    <classes>
+      <class name="runvrizon5.datap">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="f" invocation-numbers="1 2"/>
+        </methods>
+      </class> <!-- runvrizon5.datap -->
+    </classes>
+  </test> <!-- Rgression5(failed) -->
+  <test thread-count="5" name="It3(failed)">
+    <parameter name="browser" value="firefox"/>
+    <parameter name="url" value="https://www.sprint.com/"/>
+    <classes>
+      <class name="runvrizon5.datap">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="f" invocation-numbers="1 2"/>
+        </methods>
+      </class> <!-- runvrizon5.datap -->
+    </classes>
+  </test> <!-- It3(failed) -->
+</suite> <!-- Failed suite [verizonhomepage5] -->

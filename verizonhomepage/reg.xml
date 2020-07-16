@@ -1,0 +1,38 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="verizonhomepage5"> 
+<listeners>
+
+<listener class-name="com.verizonpractice.verizonhomepage.App"></listener>
+
+
+</listeners>
+
+
+
+<test name="Rgression5">
+
+
+<parameter name="url" value="https://www.sprint.com/"></parameter>
+
+<parameter name="browser" value="chrome"></parameter>
+
+<classes>
+<class name="runvrizon5.datap"></class>
+
+
+</classes>
+</test>
+<test name="It3">
+
+<parameter name="url" value="https://www.sprint.com/"></parameter>
+
+<parameter name="browser" value="firefox"></parameter>
+
+<classes>
+
+<class name="runvrizon5.datap"></class>
+
+</classes>
+</test>
+</suite>
